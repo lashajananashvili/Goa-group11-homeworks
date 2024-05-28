@@ -1,0 +1,17 @@
+
+#task1
+#jer semovitanewT cvladebi
+age=13
+age2=25
+#aq veubnebiT rom cvladebis raodenoba gazarde ertit
+age=age+1
+age2=age2+1
+#aq ki vwerT am cvladebis mnisvnelobas vitant treminalze
+print(age)
+print(age2)
+
+#task2
+balance=100
+discaunt=30
+total=balance-discaunt
+print("tqven ixdit "+str(total)+" lars")
