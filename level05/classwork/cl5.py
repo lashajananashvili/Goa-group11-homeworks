@@ -10,14 +10,18 @@
 # we wanted to 
 #print(sentence)
 
-num1=int(input('what number do you want '))
-num2=int(input('what number do you want '))
+num1 = int(input('what number do you want '))
+num2 = int(input('what number do you want '))
 
-print(num1+num2)
-
-
+print(num1 + num2)
 
 
+
+
+#ამიტი სეგვაქ ინფორმაცხია
+input()
+#ამითი კი გამოგვაქ 
+output()
 
 
 

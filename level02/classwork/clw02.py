@@ -32,4 +32,3 @@ print("tqven ixdit "+str(total)+" lars")
 
 
 
-#nice2task
