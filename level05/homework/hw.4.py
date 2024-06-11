@@ -1,4 +1,4 @@
-#firstly we craeted str varibles which are dog names
+#firstly we decleared str varibles which are dog names
 dog_name1='rick'
 dog_name2='jonh'
 dog_name3='max'
@@ -29,6 +29,3 @@ print(f"hello its {day} have nice day")
 #N5
 month='june'
 print(f"hello your birthday is in {month}")
-
-
-

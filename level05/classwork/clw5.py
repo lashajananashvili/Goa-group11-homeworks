@@ -23,9 +23,3 @@ jam='sweet'
 
 #3 we use comments to give explain and give describition 
 #to our code to make it esier to read
-
-
-dog_name1='rick'
-dog_name2='jonh'
-dog_name3='max'
-print('first dog name is'+" "+dog_name1+' '+'secend dog name is '+dog_name2+'.')
