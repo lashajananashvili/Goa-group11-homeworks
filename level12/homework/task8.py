@@ -13,3 +13,5 @@ elif grade>=60 and grade<=69:
     print("your grade is B you survive this time")
 elif grade>=0 and grade<=59:
     print("your grade is f run your mom is super mad")
+
+
