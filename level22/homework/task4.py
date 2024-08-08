@@ -10,4 +10,5 @@ def manual_len():
     for j in new_list:
         h+=1
     print(h)
+    
 manual_len()
