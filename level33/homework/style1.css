@@ -1,0 +1,72 @@
+ 
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header.magazine-header {
+    background-color: #333;
+    color: white;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  header.magazine-header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  header.magazine-header p {
+    font-size: 1.2em;
+  }
+  
+  .intro-section, .story-section ,.Achivment-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .intro-text, .story-text {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .intro-img img, .story-img img {
+    max-width: 100%;
+    border-radius: 10px;
+    
+  }
+  
+  .intro-img, .story-img {
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .intro-section ,.Achivment-section {
+    background-color: #fff;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .story-section {
+    background-color: #f4f4f4;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  footer.magazine-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+
+  
