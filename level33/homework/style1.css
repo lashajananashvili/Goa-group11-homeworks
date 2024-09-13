@@ -30,18 +30,19 @@
     margin: 0 auto;
   }
   
-  .intro-text, .story-text {
+  .intro-text, .story-text, .achivment-text {
     flex: 1;
     margin-right: 20px;
   }
   
-  .intro-img img, .story-img img {
-    max-width: 100%;
+  .intro-img img, .story-img img, .achivment-img img{
+    max-width: 300px;
     border-radius: 10px;
+    height: 150px;
     
   }
   
-  .intro-img, .story-img {
+  .intro-img, .story-img , .achivment-img{
     flex: 1;
     justify-content: center;
   }
