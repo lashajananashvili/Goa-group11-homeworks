@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Animation</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .box {
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: transformShape 2s linear 3; 
+        }
+
+        @keyframes transformShape {
+            0% {
+                background-color: red;
+                transform: scale(1) rotate(0deg);
+                border-radius: 0; 
+            }
+            50% {
+                background-color: blue;
+                transform: scale(2) rotate(90deg); 
+                border-radius: 50%; 
+            }
+            100% {
+                background-color: red;
+                transform: scale(1) rotate(0deg); 
+                border-radius: 0; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+
+</body>
+</html>
