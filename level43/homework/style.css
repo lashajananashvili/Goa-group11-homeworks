@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 450px;
+    height: 700px;
+}
+.card-image {
+    background-color: #5e4fff;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-content {
+    padding: 30px;
+}
+h2 {
+    color: #1f2f56;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+p {
+    color: #7280a7;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.plan {
+    background-color: #f5f7ff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.plan-icon {
+    background-color: #e0e8ff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.plan-details {
+    flex-grow: 1;
+}
+.plan-name {
+    color: #1f2f56;
+    font-weight: bold;
+}
+.plan-price {
+    color: #7280a7;
+}
+.plan-change {
+    color: #3829e0;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.plan-change:hover{
+    color: #0871d4;
+    text-decoration: none;
+}
+.btn {
+    background-color: #3829e0;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.btn:hover {
+    background-color: #0871d4;
+    text-decoration: none;
+}
+.cancel {
+    color: #7280a7;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+.cancel:hover {
+    color: #1f2f56;
+}

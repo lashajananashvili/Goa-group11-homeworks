@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-image:  url(./images/bg-pattern-top-desktop.svg),
+    url(./images/bg-pattern-bottom-mobile.svg);
+    
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+.container {
+    max-width: 375px;
+
+    padding: 80px 24px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+
+    color: var(--very-dark-magenta);
+
+    font-size: 32px;
+
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.header p {
+    color: var(--dark-grayish-magenta);
+}
+
+.ratings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+
+.rating {
+    background-color: var(--light-grayish-magenta);
+    border-radius: 8px;
+    padding: 16px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.stars {
+    margin-bottom: 8px;
+}
+
+.rating-text {
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+}
+
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+.testimonial {
+    background-color: var(--very-dark-magenta);
+    color: var(--white);
+    border-radius: 8px;
+
+    padding: 40px 32px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user img {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-info h3 {
+    font-weight: 500;
+}
+
+.user-info p {
+    color: var(--soft-pink);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.attribution a {
+
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+    
+
+
+    .container {
+        max-width: 1110px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+
+    
+    .header {
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 48px;
+        margin-bottom: 16px;
+    
+    }
+
+    .ratings {
+        align-items: flex-end;
+    }
+
+    .rating {
+        display: flex;
+        align-items: center;
+    
+        width: 445px;
+        padding: 20px 32px;
+    }
+
+    .rating:nth-child(2) {
+        margin-right: 45px;
+    }
+
+    
+    .rating:nth-child(3) {
+        margin-right: 90px;
+    }
+
+    .stars {
+        margin-right: 32px;
+    
+        margin-bottom: 0;
+    }
+
+    .testimonials {
+        grid-column: 1 / -1;
+        flex-direction: row;
+    }
+
+    
+    .testimonial:nth-child(2) {
+        margin-top: 16px;
+    }
+
+    .testimonial:nth-child(3) {
+        margin-top: 32px;
+    }
+}
