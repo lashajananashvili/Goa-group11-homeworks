@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <style>
+        :root {
+            --color-purple: #7C3AED;
+            --color-purple-light: #EDE9FE;
+            --color-yellow: #FFE4BA;
+            --color-peach: #FFF5EA;
+            --color-green: #4ADE80;
+            --border-radius: 12px;
+            --spacing: clamp(1rem, 2vw, 1.5rem);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.5;
+            background-color: #f8f8f8;
+            padding: var(--spacing);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing);
+        }
+
+        .card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: var(--spacing);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+        }
+
+        .card--purple {
+            background-color: var(--color-purple);
+            color: white;
+        }
+
+        .card--peach {
+            background-color: var(--color-peach);
+        }
+
+        .card--purple-light {
+            background-color: var(--color-purple-light);
+        }
+
+        .card__title {
+            font-size: clamp(1.25rem, 2vw, 1.5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .card__highlight {
+            color: var(--color-purple);
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--color-yellow);
+            border: none;
+            border-radius: 100px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: #FFD699;
+        }
+
+        .stars {
+            display: flex;
+            gap: 0.25rem;
+            color: #FFD700;
+            margin: 1rem 0;
+        }
+
+        .chart {
+            display: flex;
+            align-items: flex-end;
+            gap: 0.5rem;
+            height: 150px;
+            margin: 1rem 0;
+        }
+
+        .chart__bar {
+            flex: 1;
+            background-color: var(--color-purple);
+            border-radius: 100px;
+            transition: height 0.3s ease;
+        }
+
+        .chart__bar:hover {
+            opacity: 0.9;
+        }
+
+        .stats {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 1rem 0;
+        }
+
+        .stats__number {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .stats__growth {
+            color: var(--color-green);
+            font-weight: 600;
+        }
+
+        .platform-icons {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .platform-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background-color: #f0f0f0;
+        }
+
+        @media (min-width: 768px) {
+            .card--hero {
+                grid-column: span 2;
+            }
+            
+            .card--stats {
+                grid-column: span 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard">
+            <div class="card card--peach">
+                <h2 class="card__title">
+                    Create and schedule content
+                    <span class="card__highlight">quicker.</span>
+                </h2>
+                <button class="button">Create Post +</button>
+            </div>
+
+            <div class="card card--purple card--hero">
+                <h1 class="card__title" style="font-size: clamp(2rem, 3vw, 2.5rem);">
+                    Social Media <span style="color: #FFD700;">10x</span><br>
+                    Faster with AI
+                </h1>
+                <div class="stars">
+                    ★★★★★
+                </div>
+                <p>Over 4,000 5-star reviews</p>
+            </div>
+
+            <div class="card card--purple-light">
+                <h3 class="card__title">Schedule to social media.</h3>
+                <div class="chart">
+                    <div class="chart__bar" style="height: 40%"></div>
+                    <div class="chart__bar" style="height: 80%"></div>
+                    <div class="chart__bar" style="height: 60%"></div>
+                    <div class="chart__bar" style="height: 90%"></div>
+                    <div class="chart__bar" style="height: 50%"></div>
+                </div>
+                <p>Optimize post timings to publish content at the perfect time for your audience.</p>
+            </div>
+
+            <div class="card card--peach">
+                <h3 class="card__title">Write your content using AI.</h3>
+                <div class="card" style="background-color: white;">
+                    <p>"Give me 5 tips to grow my <span class="card__highlight">social media...</span>"</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="platform-icons">
+                    <div class="platform-icon"></div>
+                    <div class="platform-icon"></div>
+                </div>
+                <h3 class="card__title">Manage multiple accounts and platforms.</h3>
+            </div>
+
+            <div class="card card--purple card--stats">
+                <div class="stats">
+                    <span class="stats__number">20,642</span>
+                    <span class="stats__growth">+56%</span>
+                </div>
+                <h3 class="card__title">Grow followers with non-stop content.</h3>
+                <div class="chart">
+                    <div class="chart__bar" style="height: 40%; opacity: 0.8"></div>
+                    <div class="chart__bar" style="height: 50%; opacity: 0.8"></div>
+                    <div class="chart__bar" style="height: 60%; opacity: 0.8"></div>
+                    <div class="chart__bar" style="height: 70%; opacity: 0.8"></div>
+                    <div class="chart__bar" style="height: 80%; opacity: 0.8"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
