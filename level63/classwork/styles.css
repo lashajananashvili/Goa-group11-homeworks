@@ -1,0 +1,60 @@
+/* Reset body and margin */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    position: fixed; /* Makes the navbar sticky */
+    top: 0; /* Ensures it stays at the top */
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000; /* Ensures it stays above other elements */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ff9800;
+  }
+  
+  .section {
+    height: 100vh; /* Each section fills the full screen */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #home {
+    background-color: #f4f4f4;
+  }
+  
+  #about {
+    background-color: #ddd;
+  }
+  
+  #services {
+    background-color: #bbb;
+  }
+  
+  #contact {
+    background-color: #999;
+  }
+  

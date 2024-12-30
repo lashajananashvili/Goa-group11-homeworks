@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Welcome to My Responsive Website</h1>
+        <p>Click the button below to change the text!</p>
+        <button onclick="changeText()">Change Text</button>
+    </div>
+
+    <script>
+        function changeText() {
+            const title = document.getElementById('title');
+            title.innerHTML = "You just changed the text with JavaScript!";
+        }
+    </script>
+</body>
+</html>
+
