@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modify Paragraph with JavaScript</title>
+  <style>
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <p id="unique-paragraph">This is the first paragraph. It has a unique ID.</p>
+  <p>This is the second paragraph. It has no ID.</p>
+
+  <script>
+    const paragraph = document.getElementById('unique-paragraph');
+
+    paragraph.textContent = 'This content has been changed using JavaScript!';
+
+    paragraph.style.color = 'green';
+
+    paragraph.style.backgroundColor = 'lightgray';
+    paragraph.style.fontSize = '20px';
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt Arithmetic</title>
+</head>
+<body>
+  <script>
+    const num1 = parseFloat(prompt("Enter the first number:"));
+
+    const num2 = parseFloat(prompt("Enter the second number:"));
+    const result = num1 + num2;
+    if (!isNaN(result)) {
+      alert(`The sum of ${num1} and ${num2} is ${result}`);
+    } else {
+      alert("Invalid input. Please refresh and enter numbers.");
+    }
+  </script>
+</body>
+</html>
