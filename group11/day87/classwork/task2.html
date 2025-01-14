@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <div class="parent">
+        <p class="child">First paragraph</p>
+        <p class="child">Second paragraph</p>
+        <p class="child">Third paragraph</p>
+    </div>
+    <script>
+        const paragraphs = document.getElementsByTagName("p");
+        console.log(paragraphs); 
+
+        const children = document.getElementsByClassName("child");
+        console.log(children); 
+
+        const parent = children[0].parentElement;
+        console.log(parent);
+
+        const childElements = parent.children;
+        console.log(childElements); 
+
+        const firstChild = parent.firstElementChild;
+        const lastChild = parent.lastElementChild;
+        console.log(firstChild);
+        console.log(lastChild); 
+
+        const secondChild = children[1];
+        const previousSibling = secondChild.previousElementSibling;
+        const nextSibling = secondChild.nextElementSibling;
+        console.log(previousSibling); 
+        console.log(nextSibling);    
+    </script>
+</body>
+</html>

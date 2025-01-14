@@ -1,0 +1,70 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: hsl(0, 0%, 100%);
+    width: 375px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .input-box {
+    text-align: left;
+  }
+  
+  label {
+    font-size: 14px;
+    color: hsl(0, 1%, 44%);
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    font-size: 32px;
+    font-weight: 400;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: hsl(259, 100%, 65%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: hsl(259, 90%, 60%);
+  }
+  
+  .output-section p {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 10px 0;
+  }
+  
+  output-section span {
+    color: hsl(259, 100%, 65%);
+  }
+  
