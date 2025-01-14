@@ -1,3 +1,3 @@
-const person = { name: "Alice", age: 25, city: "New York" };
+const person = { name: "lasha", age: 14, city: "tbilisi" };
 const { name, age } = person;
 console.log(name, age);
