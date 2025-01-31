@@ -2,9 +2,9 @@ const getBookFromFriend = new Promise((resolve, reject) => {
     const friendBroughtBook = true; 
   
     if (friendBroughtBook) {
-      resolve("წიგნი წარმატებით მივიღე!");
+      resolve("i haev got the book secsuessfully");
     } else {
-      reject("წიგნი ვერ მივიღე, მეგობარმა არ მოიტანა."); 
+      reject("i cant get the book friend didnt gave me"); 
     }
   });
   getBookFromFriend
