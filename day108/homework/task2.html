@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Database Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    #movie-details {
+      margin-top: 20px;
+      display: none;
+    }
+    img {
+      max-width: 200px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Movie Search App 🎬</h1>
+  <input type="text" id="movie-title" placeholder="Enter movie title" />
+  <button id="search-button">Search Movie</button>
+
+  <div id="movie-details">
+    <h2 id="title"></h2>
+    <p id="year"></p>
+    <p id="plot"></p>
+    <img id="poster" src="" alt="Movie Poster" />
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>
