@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const Weather = () => {
   const [city, setCity] = useState("Tbilisi");
   const [weather, setWeather] = useState(null);
-  const [unit, setUnit] = useState("metric"); // metric -> °C, imperial -> °F
+  const [unit, setUnit] = useState("metric");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
